@@ -1,0 +1,43 @@
+<Alloy>
+	<Window class="container" id="search">
+		<View layout="vertical" id="search_root">
+			<View layout="horizontal" height="60">
+				<TextField 
+					id="searchInput" 
+					hintText="L('search_hint')"
+					backgroundColor="gray"></TextField>
+				<Picker id="typePicker">
+					<PickerRow id="pickerMovie" title="Movie"></PickerRow>
+					<PickerRow id="pickerTV" title="TV"></PickerRow>
+				</Picker>
+			</View>
+			<View layout="horizontal" height="40">
+				<Button id="searchMedia" onClick="searchClick">Search</Button>
+				<Button id="clearSearch" onClick="clearSearch">Clear</Button>
+			</View>
+			<ListView 
+				id="searchResults" 
+				defaultItemTemplate="mediaSearchTemplate"
+				onItemclick="itemClicked">
+				<Templates>
+					<ItemTemplate name="mediaSearchTemplate" class="mediaSearchTemplate">
+						<ImageView 
+							bindId="img" 
+							id="poster"
+							backgroundImage="/no_poster.jpg">
+						</ImageView>
+						<View id="movieDetails" layout="vertical">
+							<Label 
+								bindId="title" 
+								id="title"
+								color="white">
+							</Label>
+							<Button id="addToShelf" onClick="addToShelf">Add to Shelf</Button>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection name="resultsMain"></ListSection>
+			</ListView>
+		</View>
+	</Window>
+</Alloy>

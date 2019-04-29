@@ -1,0 +1,46 @@
+670 669 252:0 / / ro,nodev,relatime master:1 - ext4 /dev/root ro,seclabel,block_validity,delalloc,barrier,user_xattr
+671 670 0:17 / /dev rw,nosuid,relatime master:2 - tmpfs tmpfs rw,seclabel,mode=755
+672 671 0:12 / /dev/pts rw,relatime master:3 - devpts devpts rw,seclabel,mode=600
+673 671 0:20 / /dev/cpuctl rw,nosuid,nodev,noexec,relatime master:9 - cgroup none rw,cpu
+674 670 0:4 / /proc rw,relatime master:4 - proc proc rw,gid=3009,hidepid=2
+675 670 0:18 / /sys rw,relatime master:5 - sysfs sysfs rw,seclabel
+676 675 0:16 / /sys/fs/selinux rw,relatime master:6 - selinuxfs selinuxfs rw
+677 675 0:7 / /sys/kernel/debug rw,relatime master:16 - debugfs debugfs rw,seclabel,mode=755
+678 677 0:8 / /sys/kernel/debug/tracing rw,relatime master:21 - tracefs tracefs rw,seclabel
+679 675 0:22 / /sys/fs/bpf rw,nosuid,nodev,noexec,relatime master:18 - bpf bpf rw
+680 675 0:23 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime master:19 - pstore pstore rw,seclabel
+681 670 0:19 / /mnt rw,nosuid,nodev,noexec,relatime master:7 - tmpfs tmpfs rw,seclabel,mode=755,gid=1000
+682 681 0:25 / /mnt/runtime/default/emulated rw,nosuid,nodev,noexec,noatime master:30 - sdcardfs /data/media rw,fsuid=1023,fsgid=1023,gid=1015,multiuser,mask=6,derive_gid,default_normal
+683 681 0:25 / /mnt/runtime/read/emulated rw,nosuid,nodev,noexec,noatime master:30 - sdcardfs /data/media rw,fsuid=1023,fsgid=1023,gid=9997,multiuser,mask=23,derive_gid,default_normal
+684 681 0:25 / /mnt/runtime/write/emulated rw,nosuid,nodev,noexec,noatime master:30 - sdcardfs /data/media rw,fsuid=1023,fsgid=1023,gid=9997,multiuser,mask=7,derive_gid,default_normal
+685 681 0:25 / /mnt/runtime/full/emulated rw,nosuid,nodev,noexec,noatime master:30 - sdcardfs /data/media rw,fsuid=1023,fsgid=1023,gid=9997,multiuser,mask=7,derive_gid,default_normal
+686 670 253:65 / /vendor ro,noatime master:8 - ext4 /dev/block/pci/pci0000:00/0000:00:07.0/by-name/vendor ro,seclabel,block_validity,delalloc,barrier,user_xattr,errors=panic
+687 670 252:0 /bionic /bionic ro,relatime master:11 - ext4 /dev/root ro,seclabel,block_validity,delalloc,barrier,user_xattr
+688 687 252:0 /system/bin/bootstrap/linker /bionic/bin/linker ro,relatime master:12 - ext4 /dev/root ro,seclabel,block_validity,delalloc,barrier,user_xattr
+689 688 7:32 /bin/linker /bionic/bin/linker ro,nodev,noatime - ext4 /dev/block/loop4 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+690 687 252:0 /system/lib/bootstrap/libc.so /bionic/lib/libc.so ro,relatime master:13 - ext4 /dev/root ro,seclabel,block_validity,delalloc,barrier,user_xattr
+691 690 7:32 /lib/bionic/libc.so /bionic/lib/libc.so ro,nodev,noatime - ext4 /dev/block/loop4 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+692 687 252:0 /system/lib/bootstrap/libm.so /bionic/lib/libm.so ro,relatime master:14 - ext4 /dev/root ro,seclabel,block_validity,delalloc,barrier,user_xattr
+693 692 7:32 /lib/bionic/libm.so /bionic/lib/libm.so ro,nodev,noatime - ext4 /dev/block/loop4 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+694 687 252:0 /system/lib/bootstrap/libdl.so /bionic/lib/libdl.so ro,relatime master:15 - ext4 /dev/root ro,seclabel,block_validity,delalloc,barrier,user_xattr
+695 694 7:32 /lib/bionic/libdl.so /bionic/lib/libdl.so ro,nodev,noatime - ext4 /dev/block/loop4 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+696 670 0:21 / /acct rw,nosuid,nodev,noexec,relatime master:10 - cgroup none rw,cpuacct
+697 670 0:14 / /config rw,nosuid,nodev,noexec,relatime master:17 - configfs none rw
+698 670 0:24 / /apex rw,nosuid,nodev,noexec,relatime master:20 - tmpfs tmpfs rw,seclabel
+699 698 7:0 / /apex/com.android.media.swcodec@1 ro,nodev,noatime master:23 - ext4 /dev/block/loop0 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+700 698 7:0 / /apex/com.android.media.swcodec ro,nodev,noatime master:23 - ext4 /dev/block/loop0 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+701 698 7:8 / /apex/com.android.media@1 ro,nodev,noatime master:24 - ext4 /dev/block/loop1 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+702 698 7:8 / /apex/com.android.media ro,nodev,noatime master:24 - ext4 /dev/block/loop1 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+703 698 7:16 / /apex/com.android.resolv@1 ro,nodev,noatime master:25 - ext4 /dev/block/loop2 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+704 698 7:16 / /apex/com.android.resolv ro,nodev,noatime master:25 - ext4 /dev/block/loop2 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+705 698 7:24 / /apex/com.android.tzdata@1 ro,nodev,noatime master:26 - ext4 /dev/block/loop3 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+706 698 7:24 / /apex/com.android.tzdata ro,nodev,noatime master:26 - ext4 /dev/block/loop3 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+707 698 7:32 / /apex/com.android.runtime@1 ro,nodev,noatime master:27 - ext4 /dev/block/loop4 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+708 698 7:32 / /apex/com.android.runtime ro,nodev,noatime master:27 - ext4 /dev/block/loop4 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+709 698 7:40 / /apex/com.android.conscrypt@1 ro,nodev,noatime master:28 - ext4 /dev/block/loop5 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+710 698 7:40 / /apex/com.android.conscrypt ro,nodev,noatime master:28 - ext4 /dev/block/loop5 ro,dirsync,seclabel,block_validity,delalloc,barrier,user_xattr
+711 670 253:32 / /data rw,nosuid,nodev,noatime master:22 - ext4 /dev/block/vdc rw,seclabel,resgid=1065,errors=panic,data=ordered
+712 711 0:3 net:[4026532258] /data/vendor/var/run/netns/router rw master:29 - nsfs nsfs rw
+713 670 0:19 /runtime/default /storage rw,nosuid,nodev,noexec,relatime master:7 - tmpfs tmpfs rw,seclabel,mode=755,gid=1000
+714 713 0:25 / /storage/emulated rw,nosuid,nodev,noexec,noatime master:30 - sdcardfs /data/media rw,fsuid=1023,fsgid=1023,gid=1015,multiuser,mask=6,derive_gid,default_normal
+715 713 0:19 /user/0 /storage/self rw,nosuid,nodev,noexec,relatime master:7 - tmpfs tmpfs rw,seclabel,mode=755,gid=1000

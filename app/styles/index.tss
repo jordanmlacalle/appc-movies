@@ -1,0 +1,35 @@
+".container": {
+	backgroundColor:"white"
+}
+
+"Button": {
+	backgroundColor: "#0a0",
+	borderRadius: "20",
+	borderWidth: "1",
+	padding: "0",
+	top: "20"
+}
+
+"TextField": {
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: "10",
+	backgroundColor: "gray",
+	top: 10,
+	left: 20,
+	right: 20,
+	height: 40	
+}
+
+"#loginBtn": {
+	titleid: "login_btn_text"
+}
+
+"#label": {
+	font: {
+		fontSize: 12
+	}
+}
+
+"#skipBtn": {
+	titleid: "login_skip_btn_text"
+}

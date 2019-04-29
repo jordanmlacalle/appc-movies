@@ -1,0 +1,10 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="L('home_tab_title')">
+			<Require src="home"></Require>
+		</Tab>
+		<Tab title="L('search_tab_title')">
+			<Require src="search"></Require>
+		</Tab>
+	</TabGroup>
+</Alloy>

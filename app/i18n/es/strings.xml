@@ -1,0 +1,11 @@
+<resources>
+    <string name="login_btn_text">Iniciar</string>
+    <string name="email_textfield">Email</string>
+    <string name="password_textfield">Contraseña</string>
+    <string name="home_tab_title">Inicio</string>
+    <string name="search_tab_title">Buscar</string>
+    <string name="shelf_title">Mi Estante</string>
+    <string name="search_hint">Peliculas, series de tele, ...</string>
+    <string name="search_btn_text">Buscar</string>
+    <string name="login_skip_btn_text">No Iniciar</string>
+</resources>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="login_btn_text">Login</string>
+    <string name="email_textfield">Email</string>
+    <string name="password_textfield">Password</string>
+    <string name="home_tab_title">Home</string>
+    <string name="search_tab_title">Search</string>
+    <string name="shelf_title">My Shelf</string>
+    <string name="search_hint">Movie, TV Show...</string>
+    <string name="search_btn_text">Search</string>
+    <string name="login_skip_btn_text">Skip Login</string>
+
+    <!-- Search alerts -->
+    <string name="item_already_added">Item already on Shelf</string>
+    <string name="item_added">Item added to Shelf</string>
+    <string name="generic_error">Uh Oh! We're having trouble searching right now. Try again later.</string>
+</resources>

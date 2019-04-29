@@ -1,0 +1,10 @@
+<Alloy>
+	<Window>
+		<View height="50%" layout="vertical">
+			<TextField id="email" hintText="L('email_textfield')"></TextField>
+			<TextField id="password" hintText="L('password_textfield')" passwordMask="true"></TextField>
+			<Button id="loginBtn" onClick="login"></Button>
+			<Button id="skipBtn" onClick="skipLogin"></Button>
+		</View>
+	</Window>
+</Alloy>

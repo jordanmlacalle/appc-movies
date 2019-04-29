@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container">
+		<View id="details" layout="vertical">
+			<ImageView id="poster" backgroundImage="/no_poster.jpg"></ImageView>
+			<View id="mediaInfo" layout="vertical">
+				<Label id="title" color="white"></Label>
+				<Label id="plot" color="white"></Label>
+				
+			</View>
+		</View>
+	</Window>
+</Alloy>

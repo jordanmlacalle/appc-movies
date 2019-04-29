@@ -1,0 +1,32 @@
+<Alloy>
+	<Window class="container" id="home">
+		<View id="v_view" layout="vertical">
+			<View layout="horizontal" height="60">
+				<Label id="homeTitle">L('shelf_title')</Label>
+				<View layout="vertical" top="20">
+					<Label id="sortLabel">Sort By Order</Label>
+					<Switch id="sortSwitch" onChange="sort"/>
+				</View>
+			</View>
+			<ListView id="shelfList" defaultItemTemplate="title-year">
+				<Templates>
+					<ItemTemplate name="title-year" class="mediaSearchTemplate">
+						<ImageView bindId="img" id="poster"></ImageView>
+						<View id="movieDetails" layout="vertical">
+							<Label 
+								bindId="title" 
+								id="title"
+								color="white">
+							</Label>
+							<Button id="replacePoster" onClick="cameraBtnListener">Change Poster</Button>
+							<Button id="removeFromShelf" onClick="removeFromShelf">Remove from Shelf</Button>
+						</View>
+					</ItemTemplate>
+				</Templates>
+				<ListSection id="shelfSection" dataCollection="shelf">
+					<ListItem template="title-year" img:image="{poster}" title:text="{title} ({year})" id:text="{id}"/>
+				</ListSection>
+			</ListView>
+		</View>
+	</Window>
+</Alloy>

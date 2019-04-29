@@ -1,0 +1,55 @@
+
+"Button": {
+	backgroundColor: "#0a0",
+	borderRadius: "20",
+	borderWidth: "1",
+	padding: "0",
+	top: 20
+}
+
+"TextField": {
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
+	borderRadius: "10",
+	top: 10,
+	left: 20,
+	right: 20,
+	height: 40	
+}
+
+"#details": {
+    top: 20,
+    left: 10,
+    right: 10,
+    bottom: 0
+}
+
+"#label": {
+	font: {
+		fontSize: 12
+	}
+}
+
+"#mediaInfo": {
+    backgroundColor: "#3e3e3e",
+    borderRadius: 20,
+    top: 20,
+    paddingTop: 10,
+    paddingLeft: 10
+}
+
+"#poster": {
+    width: 270,
+    height: 400
+}
+
+"#plot": {
+    left: 10
+}
+
+"#title": {
+    top: 20,
+    left: 10,
+    font: {
+        fontSize: 24
+    }
+}
