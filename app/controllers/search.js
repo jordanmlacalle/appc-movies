@@ -162,8 +162,10 @@ function itemClicked(e) {
     xhr.GET({
         url: url,
         onSuccess: function(e) {
-            var details = JSON.parse(this.responseText);
-
+            console.log(e);
+            var result = JSON.parse(e.data);
+            console.log(result);
+            var details = result;
             console.log('Opening window for ' + details.Title);
             Alloy.createController('movieDetails', details)
                 .getView()
